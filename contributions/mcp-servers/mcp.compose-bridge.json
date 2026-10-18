@@ -1,11 +1,32 @@
 {
   "name": "compose-bridge",
-  "displayName": "ComposeBridge MCP",
-  "description": "Real-time on-device visual editor for Jetpack Compose + MCP Server for AI agents.",
+  "description": "Deterministic AST-guided mutations for Jetpack Compose. Allows AI agents to safely edit UI tokens (colors, dimensions) with dry-run and git-style diffs.",
   "author": "JALAL591",
   "repository": "https://github.com/JALAL591/compose-bridge",
-  "type": "local",
-  "command": "python",
-  "args": ["server/mcp_server.py"],
-  "tags": ["kotlin", "android", "jetpack-compose", "ui", "mcp", "ai"]
+  "tools": [
+    {
+      "name": "list_tokens",
+      "description": "Scans the project and lists all registered design tokens and hardcoded values."
+    },
+    {
+      "name": "set_token",
+      "description": "Mutates a specific token value via AST byte-offset."
+    },
+    {
+      "name": "add_token",
+      "description": "Extracts a hardcoded value into a new design token."
+    },
+    {
+      "name": "rollback_last",
+      "description": "Reverts the last mutation safely using the local journal."
+    },
+    {
+      "name": "get_token_impact",
+      "description": "Shows all Composables affected by changing a specific token."
+    },
+    {
+      "name": "suggest_token_split",
+      "description": "Suggests splitting a token if it's used in semantically different contexts."
+    }
+  ]
 }
