@@ -1,7 +1,7 @@
 {
   "name": "compose-bridge",
   "displayName": "ComposeBridge MCP",
-  "description": "Real-time on-device visual editor for Jetpack Compose + MCP Server for AI agents.",
+  "description": "Real-time on-device visual editor for Jetpack Compose + MCP Server for AI agent.",
   "author": "JALAL591",
   "repository": "https://github.com/JALAL591/compose-bridge",
   "type": "local",
