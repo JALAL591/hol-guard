@@ -1,0 +1,11 @@
+{
+  "name": "compose-bridge",
+  "displayName": "ComposeBridge MCP",
+  "description": "Real-time on-device visual editor for Jetpack Compose + MCP Server for AI agents.",
+  "author": "JALAL591",
+  "repository": "https://github.com/JALAL591/compose-bridge",
+  "type": "local",
+  "command": "python",
+  "args": ["server/mcp_server.py"],
+  "tags": ["kotlin", "android", "jetpack-compose", "ui", "mcp", "ai"]
+}
