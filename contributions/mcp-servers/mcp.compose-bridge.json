@@ -1,4 +1,5 @@
 {
+  "id": "mcp.compose-bridge",
   "name": "compose-bridge",
   "description": "Deterministic AST-guided mutations for Jetpack Compose. Allows AI agents to safely edit UI tokens (colors, dimensions) with dry-run and git-style diffs.",
   "author": "JALAL591",
